@@ -1,0 +1,162 @@
+html{
+    scroll-behavior: smooth;
+	overflow: auto;
+}
+
+:root body {
+	margin: 0;
+	height: 100vh;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* width: 100vh; */
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0;
+    color: rgb(129, 171, 207);
+}
+
+.img {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    background: url("images/d21_gallery-unsplash.jpg") no-repeat 
+    center;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    border: 0 solid; 
+    border-radius: 5px; 
+    position: relative;
+} 
+
+.img-description {
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 100%;
+    color: #ff9a9a;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 13px
+}
+h1{
+	font-size: 200%;
+
+}
+.Odin-Logo .Logo {
+	height: 6rem;
+	min-width: 100%;
+	object-fit: contain;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.form-content{
+    overflow: scroll;
+	flex: 6;
+}
+
+.description {
+	padding: 64px 36px 18px;
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+.form-section {
+	padding: 12px 36px;
+	background-color: hsla(217, 81%, 71%, 0.1);
+	box-shadow: 0 5px 5px rgb(4, 31, 95, 0.5);
+}
+
+.form-section > p {
+	font-weight: 600;
+	font-size: 1.4rem;
+	
+}
+
+#signup-form {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+#signup-form > div {
+	width: 40%;
+	min-width: 150px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+#signup-form p {
+	margin: 0;
+}
+
+#signup-form input {
+	width: 100%;
+	background-color: rgba(250, 250, 250, 0.15);
+	border: 1px solid grey;
+	border-radius: 10px;
+	padding: 3px 5px;
+	font-size: 1rem;
+	margin-top: 2px;
+}
+
+#signup-form input:focus {
+	box-shadow: 0px 2px 2px #041f5f;
+}
+
+.submit-section {
+	padding: 24px 36px;
+	color: #041f5f;
+}
+
+button[type="submit"] {
+	border: none;
+	background-color: #041f5f;
+	color: white;
+	padding: 8px 36px;
+	font-size: 1em;
+	border-radius: 1em;
+	box-shadow: 0 2px 3px #7ba9f1;
+}
+
+.submit-section a {
+	color:#7ba9f1
+}
+
+.Login {
+	color: #7ba9f1;
+}
+
+@media screen and (max-width: 940px) {
+	body {
+		flex-direction: column;
+		height: auto;
+	}
+
+	#signup-form {
+		width: 100%;
+	}
+
+	#signup-form > div {
+		min-width: 250px;
+		width: 40%;
+	}
+
+	#signup-form input {
+		width: 100%;
+	}
+}
+
+
